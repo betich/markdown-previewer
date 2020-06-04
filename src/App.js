@@ -5,10 +5,9 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <hr />
-      <div id="markdown-linkcontainer">
+      <div id="codesection">
         <MarkdownPanels />
       </div>
     </div>

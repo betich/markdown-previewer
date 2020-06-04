@@ -1,6 +1,11 @@
 import React from 'react';
 import marked from 'marked';
 
+const renderer = new marked.Renderer();
+renderer.link = function (href, title, text) {
+    return `<a target="_blank" href="${href}">${text}</a>`;
+}
+
 class Preview extends React.Component {
     constructor(props) {
         super(props);
@@ -9,11 +14,13 @@ class Preview extends React.Component {
 
     render() {
         return (
-            <div className="panelArea">
+            <div className="sidecontainer">
                 <div className="topbar">
                     <label htmlFor="preview">Preview</label>
                 </div>
-                <div id="preview" dangerouslySetInnerHTML={{__html: this.props.html}}></div>
+                <div id="preview-container">
+                    <div id="preview" dangerouslySetInnerHTML={{__html: this.props.html}}></div>
+                </div>
             </div>
         );
     }
@@ -52,13 +59,13 @@ class MarkdownPanels extends React.Component {
     render() {
         return(
             <div>
-                <div className="panelArea">
+                <div className="sidecontainer">
                     <div className="topbar">
                         <label htmlFor="editor">Markdown</label>
                     </div>
-                    <textarea id="editor" rows="10" value={this.state.input} onChange={this.handleChange} placeholder="Markdown Input"></textarea>
+                    <textarea id="editor" value={this.state.input} onChange={this.handleChange} placeholder="Markdown Input"></textarea>
                 </div>
-                <Preview html={marked(this.state.input, {breaks: true})} />
+                <Preview html={marked(this.state.input, { renderer: renderer, breaks: true})} />
             </div>
         );
     }
