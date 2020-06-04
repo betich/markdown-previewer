@@ -34,7 +34,7 @@ textarea {
 }
 
 textarea, #preview {
-  padding: 100px 30px 30px 30px;
+  padding: 80px 30px 30px 30px;
   border: none;
   border-left: 1px solid gainsboro;
   font-size: 14px;
@@ -43,9 +43,39 @@ textarea, #preview {
 
 #preview {
   overflow: hidden;
+  font-size: 18px;
 }
 #preview * {
-  width: 100%;
+  margin: 40px 0;
+}
+#preview h1, #preview h2 {
+  margin-bottom: 24px;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #ccc;
+}
+#preview h1 {
+  font-size: 2.7rem;
+}
+#preview h2 {
+  font-size: 2rem;
+}
+#preview h3 {
+  font-size: 1.75rem;
+}
+#preview h4 {
+  font-size: 1.55rem;
+}
+#preview h5 {
+  font-size: 1.35rem;
+}
+#preview h6 {
+  font-size: 1.2rem;
+}
+#preview a {
+  color: #0c93e4;
+}
+#preview a:hover {
+  text-decoration: none;
 }
 #preview img {
   width: auto;
@@ -53,9 +83,30 @@ textarea, #preview {
   object-fit: cover;
 }
 #preview pre {
-  background: #252525;
+  background: #221f21;
   color: white;
   padding: 20px;
+}
+#preview code {
+  background: #221f21;
+  color: white;
+  padding: 3px;
+}
+#preview blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+#preview blockquote p {
+  display: inline;
+}
+#preview hr {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  margin: 5px 0 15px 0;
+}
+#preview li {
+  margin: 5px 0;
 }
 
 #preview-container {
