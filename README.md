@@ -13,4 +13,5 @@ Codepen Link: https://codepen.io/Betich/full/eYJmNvO
 
 ----
 *This project is made for a FreeCodeCamp Certificate project.*
+
 *This project is also my first react.js project!*
