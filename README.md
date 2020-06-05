@@ -1,7 +1,7 @@
 # Markdown Previewer
 
 
-![Screenshot](https://lh3.googleusercontent.com/pw/ACtC-3dl2jxQkFy8NhDo_F-lF-0ivObOkFz-Mj3cTBAFiskJy8csfOI5s8azwands3d03H2ig9z6K-6cVc6Gm3W-ayNWVMSK1g7L1GMBocOE56X33EdD91o3b8GVhqT7ykYucwj-eBZnp2ChrCJPhnnIM6fm=w1917-h931-no "Screenshot")
+![Screenshot](https://www.dl.dropboxusercontent.com/s/f31g6xdydzxe6xq/markdown-converter.png "Screenshot")
 
 Codepen Link: https://codepen.io/Betich/full/eYJmNvO
 
